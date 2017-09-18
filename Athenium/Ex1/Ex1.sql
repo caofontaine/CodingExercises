@@ -4,4 +4,4 @@ FROM Item
   LEFT JOIN Category ON Item.categoryID = Category.categoryID
   -- This will include all matching itemID's from both tables.
   INNER JOIN ItemOrderMembership ON Item.itemID = ItemOrderMembership.itemID
-WHERE ItemOrderMembership.orderID = 12345 # Only include order # 12345
+WHERE ItemOrderMembership.orderID = 12345 -- Only include order # 12345
